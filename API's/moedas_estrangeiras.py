@@ -1,8 +1,8 @@
 import requests
 
 def obter_taxa_cambio(moeda_origem, moeda_destino):
-    key_api = '5533e65c43279fdf6c5f7e4a'
-    url = f'https://v6.exchangerate-api.com/v6/{key_api}/pair/{moeda_origem}/{moeda_destino}'
+    api_key = '5533e65c43279fdf6c5f7e4a'
+    url = f'https://v6.exchangerate-api.com/v6/{api_key}/pair/{moeda_origem}/{moeda_destino}'
 
     resposta = requests.get(url)
 

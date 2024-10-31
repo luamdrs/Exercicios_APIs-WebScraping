@@ -1,8 +1,8 @@
 import requests
 
 def obter_clima(cidade):
-    key_api = '9d606fac9219b46aaa44a379d9d2f8b6'
-    url = f'http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={key_api}&units=metric&lang=pt_br'
+    api_key = '9d606fac9219b46aaa44a379d9d2f8b6'
+    url = f'http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={api_key}&units=metric&lang=pt_br'
 
     resposta = requests.get(url)
 
